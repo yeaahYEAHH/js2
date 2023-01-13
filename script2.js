@@ -181,4 +181,4 @@ function sort(list){
     } 
     return list   
 }
-console.log(sort(d4))
+console.log(sort(d4).join(" "))
