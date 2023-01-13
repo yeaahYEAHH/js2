@@ -172,13 +172,17 @@ console.log(sum2)
 
 let d4 = [45,78,10,3];
 function sort(list){
-    for(let i = 0; i > list.legth; i++){
-        for(let j = 0; j > list.legth; j++){
-            if(list[j] > list[i]){
-                list[j] = list[i]
+    for(let i = 0; i < list.length; i++){
+        for(let j = 0; j < list.length; j++){
+            if(list[i] < list[j]){
+                let num = list[i];
+                list[i] = list[j];
+                list[j] = num
             }
         }
     } 
-    return list   
+    console.log(list.join(" "))   
 }
-console.log(sort(d4).join(" "))
+
+sort(d4)
+
